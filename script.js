@@ -2,7 +2,7 @@ const inputTask = document.getElementById("input-task");
 const sendBtn = document.getElementById("send-btn");
 const taskList = document.querySelector("#list ul");
 
-let tasks = [];
+let tasks = JSON.parse(localStorage.getItem("@taskList")) || [];
 
 function renderTaks() {
   taskList.innerHTML = "";
@@ -37,6 +37,7 @@ function addTask() {
     saveLocalStorage();
   }
 }
+renderTaks();
 
 function saveLocalStorage() {
   localStorage.setItem("@taskList", JSON.stringify(tasks));
