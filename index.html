@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task List</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="task-creator">
+        <form id="task-form" class="task-box">
+          <input
+            type="text"
+            id="input-task"
+            placeholder="Digite uma tarefa...!"
+            required
+          />
+          <button type="submit" id="send-btn" class="btn-task">Criar tarefa</button>
+        </form>
+      </section>
+
+      <section class="task-list" id="list"> 
+        <ul>
+        <li>
+          <h1>Sem tarefas pendentes!</h1>
+        </li>
+     
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
